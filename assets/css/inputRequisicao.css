@@ -1,113 +1,159 @@
-input, select{
-    border-color: #CDCDCD;
+input,
+select {
+    border-color: #cdcdcd;
     border-style: solid;
     border-width: 1px;
     border-radius: 2px;
     height: 25px;
 }
 
-.chkPrioridade{
-    display: inline;
-    width: 15px;
-    height: 15px;
+.chkPrioridade {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.chkPrioridadeDesabilitado {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ffffff;
     border-radius: 50%;
 }
 
-:checked{
-    transition-duration: 1000ms;  
+:checked {
+    transition-duration: 1000ms;
     width: 20px;
     height: 20px;
 }
 
-.grupoInput span{
+.grupoInput span {
     font-size: 16px;
 }
-#idDepartamento{
+
+#idDepartamento {
     width: 60px;
 }
-#departamento{
+
+#departamento {
     width: 450px;
 }
-#dataRequisicao{
+
+#dataRequisicao {
     width: 120px;
 }
-#idFuncionario{
+
+#idFuncionario {
     width: 60px;
 }
-#NomeFuncionario{
+
+#NomeFuncionario {
     width: 450px;
 }
-#cargo{
+
+#cargo {
     width: 120px;
 }
-#categoriaMotivo{
+
+#categoriaMotivo {
     width: 130px;
 }
-#Motivo{
+
+#Motivo {
     width: 200px;
 }
-.grupo9{
+
+.grupo9 {
     width: 250px;
 }
 
-.camposItens span{
+.camposItens span {
     font-size: 16px;
 }
-.grupoProduto{
+
+.grupoProduto {
     width: 90px;
     margin-right: 5px;
-
 }
-.grupoProduto input{
+
+.grupoProduto input {
     width: 90px;
 }
 
-.grupoProdutoDescricao{
+.grupoProdutoDescricao {
     width: 300px;
     margin-right: 5px;
 }
-.grupoProdutoDescricao input{
+
+.grupoProdutoDescricao input {
     width: 300px;
 }
-.grupoEstoque{
-    width: 60px;
-    margin-right: 5px; 
-}
-.grupoEstoque input{
-    width: 60px;
-}
-.grupoQuantidade{
-    width: 80px;
-}
-.grupoQuantidade input{
+
+.grupoEstoque {
     width: 80px;
 }
 
+.grupoEstoque input {
+    width: 80px;
+}
 
-.BtnInserirItens{
-    background-color:#0095C5 ;
+.BtnInserirItens {
+    background-color: black;
+    width: 90px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 15px;
+}
+
+.BtnInserirItens:hover {
+    background-color: #606060;
+}
+
+#BtnInserirItens {
+    background-color: #0095C5;
     width: 100px;
     height: 30px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     cursor: pointer;
-
+    margin-left: 1rem;
+    transition: 0.5s;
 }
-.BtnInserirItens span{
+
+#BtnInserirItens:hover {
+    background-color: #005f7e;
+}
+
+.BtnInserirItens span {
     color: #ffffff;
-    font-size: 14px;
 }
 
-#total{
-    width: 120px;
-    background-color: #CDCDCD;
-    margin-left: 5px;
+#urgente:checked {
+    border: 1px solid red;
+    background-color: red;
+    transform: scale(1.2);
 }
-input{
-    outline-color: #0095C5;
+
+#medio:checked {
+    border: 1px solid yellow;
+    background-color: yellow;
+    transform: scale(1.2);
 }
-#total:focus{
-    outline-color: #CDCDCD;
+
+#baixo:checked {
+    border: 1px solid green;
+    background-color: green;
+    transform: scale(1.2);
+
 }
