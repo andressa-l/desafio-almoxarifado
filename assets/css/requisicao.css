@@ -12,6 +12,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
+    background-color: #b3e8f8;
 }
 
 .main {
@@ -60,6 +61,10 @@ body {
     flex-direction: column;
     margin-bottom: 3vh;
     flex-wrap: wrap;
+    /* border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px; */
 }
 
 .linhasCampos {
@@ -109,7 +114,7 @@ body {
     border-style: solid;
     border-width: 1px;
     border-radius: 5px;
-    background-color: red;
+    background-color: #e75656;
     color: #ffffff;
 }
 
@@ -148,6 +153,7 @@ body {
     width: 100%;
     justify-content: center;
     align-items: center;
+    align-items: flex-end;
 }
 
 .linhaAdicionarItens {
@@ -157,8 +163,9 @@ body {
     align-items: end;
     padding-top: 2vh;
     padding-bottom: 2vh;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
+    gap: 5px;
 }
 
 .grupoStatusEstoque {
@@ -172,6 +179,7 @@ body {
     display: flex;
     width: 30px;
     height: 30px;
+    margin-right: 10px;
 }
 
 .grupoBtnInserirItens {
@@ -184,6 +192,8 @@ body {
 .tabelaItens {
     margin-top: 10px;
 }
+
+
 
 /* css para a tabela */
 .tabelaItens {
@@ -209,4 +219,8 @@ body {
     border: 1px solid #cdcdcd;
     border-collapse: collapse;
     padding-left: 10px;
+}
+#nivel{
+    margin-left: 2px;
+    border: 1px solid #CDCDCD;
 }

@@ -22,7 +22,7 @@
             <div class="dadosPrincipais">
                 <div class="titulo">
                     <span>Dados Principais | Requisição Nº </span>
-                    <input type="text" id="inpNumero" data-obrigatorio="true" data-only-number="true" />
+                    <input type="text" id="inpNumero" data-obrigatorio="true" />
                 </div>
                 <div class="camposPrincipais">
                     <div class="camposPrincipaisLinha1 linhasCampos">
@@ -99,26 +99,25 @@
                     <div class="linhaAdicionarItens">
                         <div class="grupoProduto">
                             <span>Cod. Produto</span>
-                            <input type="text" id="CodigoProduto" data-obrigatorio="true" data-only-number="true" />
+                            <input type="text" id="CodigoProduto" data-obrigatorio="true" data-only-number="true" onchange="verificarEstoque()" />
                         </div>
                         <div class="grupoProdutoDescricao">
                             <span>Descrição</span>
                             <input type="text" id="DescricaoProduto" data-obrigatorio="true" />
                         </div>
                         <div class="grupoEstoque">
-                            <span>Quantidade</span>
-                            <input type="text" id="Estoque" data-obrigatorio="true" />
+                            <span>Estoque</span>
+                            <input type="number" id="Estoque" data-obrigatorio="true" />
                         </div>
-                        <div class="grupoTotal">
-                            <span>Total</span>
-                            <input type="number" id="total" data-obrigatorio="true" />
+                        <div class="grupoQuantidade">
+                            <span>Quantidade</span>
+                            <input type="number" id="Quantidade" data-obrigatorio="true" data-only-number="true" />
                         </div>
 
-                        <div class="grupoStatusEstoque">
-                            <div class="contain-tooltip">
-                                <img class="image-with-tooltip" src="assets/img/verde.svg" alt="" class="element-with-tooltip" data-tooltip="" />
-                                <img class="image-with-tooltip" src="assets/img/vermelho.svg" alt="" class="element-with-tooltip" data-tooltip="" />
-                                <img class="image-with-tooltip" src="assets/img/amarelo.svg" alt="" class="element-with-tooltip" data-tooltip="" />
+                        <div class="grupoStatusEstoque" id="EstoqueMinimo">
+                        
+                            <div class="legenda">   
+                                <img src="assets/img/branco.svg" alt="" id="nivel" class="image-with-tooltip">
                             </div>
                         </div>
                         <div class="BtnInserirItens" id="BtnInserirItens">
@@ -137,6 +136,10 @@
                                 <th></th>
                             </tr>
                         </table>
+                    </div>
+                    <div class="grupoTotal">
+                        <span>Total</span>
+                        <input type="number" id="total" data-obrigatorio="true" />
                     </div>
                     <div class="grupoBtnInserirItens"></div>
                     <div class="BtnInserirItens" id="btn-gravar">

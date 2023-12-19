@@ -85,20 +85,42 @@ select {
 }
 
 .grupoProdutoDescricao {
-    width: 300px;
+    width: 200px;
     margin-right: 5px;
 }
 
 .grupoProdutoDescricao input {
-    width: 300px;
+    width: 200px;
 }
 
 .grupoEstoque {
     width: 80px;
+    margin-right: 5px;
+
 }
 
 .grupoEstoque input {
     width: 80px;
+    margin-right: 5px;
+
+}
+
+.grupoQuantidade {
+    width: 80px;
+    /* margin-right: 5px; */
+
+}
+
+.grupoQuantidade input {
+    width: 80px;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+
+
+.grupoTotal {
+    display: flex;
+    justify-items: center;
 }
 
 .BtnInserirItens {
@@ -112,6 +134,8 @@ select {
     cursor: pointer;
     transition: 0.5s;
     margin-bottom: 15px;
+    margin-top: 15px;
+
 }
 
 .BtnInserirItens:hover {

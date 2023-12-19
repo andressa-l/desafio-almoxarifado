@@ -52,7 +52,7 @@ const produtos = [
         Estoque: 15,
         EstoqueMinimo: 5,
         Unidade: "Un",
-        Preco: 16,
+        Preco: 16.00,
     },
     {
         idProduto: 3,
@@ -60,7 +60,7 @@ const produtos = [
         Estoque: 10,
         EstoqueMinimo: 5,
         Unidade: "Un",
-        Preco: 10,
+        Preco: 10.00,
       },
     
 ]
