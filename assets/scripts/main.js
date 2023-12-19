@@ -275,7 +275,7 @@ document.addEventListener('DOMContentLoaded', function() {
     imagesWithTooltip.forEach(image => {
         const tooltip = document.createElement('div');
         tooltip.classList.add('tooltip');
-        tooltip.innerHTML = `<div class="tooltipDiv"><img src="/assets/img/verde.svg" alt="Imagem no Tooltip"><p>: Estoque acima de 10% do estoque mínimo.</p></div><div class="tooltipDiv"><img src="/assets/img/amarelo.svg" alt="Imagem no Tooltip"><p>: Estoque abaixo de 10% do estoque mínimo.</p></div><div class="tooltipDiv"><img src="/assets/img/vermelho.svg" alt="Imagem no Tooltip"><p>: Estoque abaixo do estoque mínimo.</p></div>`;
+        tooltip.innerHTML = `<div class="tooltipDiv"><img src="assets/img/verde.svg" alt="Imagem no Tooltip"><p>: Estoque acima de 10% do estoque mínimo.</p></div><div class="tooltipDiv"><img src="assets/img/amarelo.svg" alt="Imagem no Tooltip"><p>: Estoque abaixo de 10% do estoque mínimo.</p></div><div class="tooltipDiv"><img src="assets/img/vermelho.svg" alt="Imagem no Tooltip"><p>: Estoque abaixo do estoque mínimo.</p></div>`;
         image.parentNode.appendChild(tooltip);
     });
   });
@@ -304,12 +304,12 @@ function verificarEstoque() {
         const limiteInferior = estoqueMinimo * 0.9;
 
         if (produto.Estoque > limiteSuperior) {
-            nivelImg.src = "../img/verde.svg";
+            nivelImg.src = "assets/img/verde.svg";
         } else if (produto.Estoque < limiteInferior) {
-            nivelImg.src = "../img/vermelho.svg"; 
+            nivelImg.src = "assets/img/vermelho.svg"; 
         } 
         else {
-            nivelImg.src = "../img/amarelo.svg"; 
+            nivelImg.src = "assets/img/amarelo.svg"; 
         }
     }
 }
