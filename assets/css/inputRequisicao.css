@@ -19,7 +19,7 @@ select {
 
 .chkPrioridadeDesabilitado {
     appearance: none;
-    width: 20px;
+    max-width: 20px;
     height: 20px;
     border: 1px solid #ffffff;
     border-radius: 50%;
@@ -27,7 +27,7 @@ select {
 
 :checked {
     transition-duration: 1000ms;
-    width: 20px;
+    max-width: 20px;
     height: 20px;
 }
 
@@ -36,39 +36,39 @@ select {
 }
 
 #idDepartamento {
-    width: 60px;
+    max-width: 60px;
 }
 
 #departamento {
-    width: 450px;
+    max-width: 450px;
 }
 
 #dataRequisicao {
-    width: 120px;
+    max-width: 120px;
 }
 
 #idFuncionario {
-    width: 60px;
+    max-width: 60px;
 }
 
 #NomeFuncionario {
-    width: 450px;
+    max-width: 450px;
 }
 
 #cargo {
-    width: 120px;
+    max-width: 120px;
 }
 
 #categoriaMotivo {
-    width: 130px;
+    max-width: 130px;
 }
 
 #Motivo {
-    width: 200px;
+    max-width: 200px;
 }
 
 .grupo9 {
-    width: 250px;
+    max-width: 250px;
 }
 
 .camposItens span {
@@ -76,43 +76,43 @@ select {
 }
 
 .grupoProduto {
-    width: 90px;
+    max-width: 90px;
     margin-right: 5px;
 }
 
 .grupoProduto input {
-    width: 90px;
+    max-width: 90px;
 }
 
 .grupoProdutoDescricao {
-    width: 200px;
+    max-width: 200px;
     margin-right: 5px;
 }
 
 .grupoProdutoDescricao input {
-    width: 200px;
+    max-width: 200px;
 }
 
 .grupoEstoque {
-    width: 80px;
+    max-width: 80px;
     margin-right: 5px;
 
 }
 
 .grupoEstoque input {
-    width: 80px;
+    max-width: 80px;
     margin-right: 5px;
 
 }
 
 .grupoQuantidade {
-    width: 80px;
+    max-width: 80px;
     /* margin-right: 5px; */
 
 }
 
 .grupoQuantidade input {
-    width: 80px;
+    max-width: 80px;
     padding-right: 5px;
     margin-right: 5px;
 }
@@ -125,9 +125,7 @@ select {
 
 .BtnInserirItens {
     background-color: black;
-    width: 90px;
-    height: 50px;
-    border-radius: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,17 +133,21 @@ select {
     transition: 0.5s;
     margin-bottom: 15px;
     margin-top: 15px;
-
+    max-width: 100px;
+    border-radius: 20px;
 }
 
 .BtnInserirItens:hover {
     background-color: #606060;
 }
+.BtnInserirItens span {
+    color: #ffffff;
+}
 
 #BtnInserirItens {
     background-color: #0095C5;
+    height: 40px;
     width: 100px;
-    height: 30px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -154,13 +156,12 @@ select {
     margin-left: 1rem;
     transition: 0.5s;
 }
+#BtnInserirItens span {
+    color: #ffffff;
+}
 
 #BtnInserirItens:hover {
     background-color: #005f7e;
-}
-
-.BtnInserirItens span {
-    color: #ffffff;
 }
 
 #urgente:checked {

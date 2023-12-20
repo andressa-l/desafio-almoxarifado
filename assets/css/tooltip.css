@@ -15,7 +15,7 @@
 
 .image-with-tooltip:hover + .tooltip {
     display: inline-block;
-    width: 450px;
+    max-width: 450px;
     gap: 20px;
   }
   

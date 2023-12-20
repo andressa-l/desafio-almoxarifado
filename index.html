@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="assets/css/inputRequisicao.css" />
     <link rel="stylesheet" href="assets/css/tabelas.css" />
     <link rel="stylesheet" href="assets/css/tooltip.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
-    <div class="menu"></div>
 
-    <div class="main">
-        <div class="header">
-            <span>Novo Pedido de Requisição</span>
-        </div>
-        <div class="conteudo">
+    <div class="container">
+        <header class="header">
+            <h1>Novo Pedido de Requisição</h1>
+        </header>
+        <form class="conteudo">
             <div class="dadosPrincipais">
                 <div class="titulo">
                     <span>Dados Principais | Requisição Nº </span>
@@ -120,7 +120,7 @@
                                 <img src="assets/img/branco.svg" alt="" id="nivel" class="image-with-tooltip">
                             </div>
                         </div>
-                        <div class="BtnInserirItens" id="BtnInserirItens">
+                        <div id="BtnInserirItens">
                             <span>Adicionar</span>
                         </div>
                     </div>
@@ -147,7 +147,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
 
     <script src="assets/scripts/dados.js"></script>

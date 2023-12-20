@@ -8,14 +8,13 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    padding: 0 400px;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     background-color: #b3e8f8;
 }
 
-.main {
+.container {
     display: flex;
     flex-direction: column;
     font-size: 20px;
@@ -36,8 +35,10 @@ body {
     text-align: center;
 }
 
-.header span {
+.header h1 {
     color: black;
+    font-weight: 400;
+    font-size: 25px;
 }
 
 .conteudo {
@@ -51,20 +52,19 @@ body {
     border: 1px solid black;
     border-radius: 2rem;
     flex-wrap: wrap;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     font-size: 25px;
 }
 
 .camposPrincipais {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 3vh;
     flex-wrap: wrap;
-    /* border: 1px solid black;
+    border: .8px solid rgb(175, 173, 173);
     border-radius: 10px;
     padding: 5px;
-    margin: 5px; */
+    margin: 5px;
 }
 
 .linhasCampos {
@@ -130,7 +130,7 @@ body {
 }
 
 .btnAdd {
-    width: 30px;
+    max-width: 30px;
     height: 30px;
 }
 
@@ -150,22 +150,29 @@ body {
 .camposItens {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 100%;
     justify-content: center;
-    align-items: center;
     align-items: flex-end;
+    border: .8px solid rgb(175, 173, 173);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 3vh;
+    flex-wrap: wrap;
 }
 
 .linhaAdicionarItens {
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: flex-end;
     padding-top: 2vh;
     padding-bottom: 2vh;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: center;
     gap: 5px;
+    
+    
 }
 
 .grupoStatusEstoque {
@@ -177,7 +184,7 @@ body {
 
 .grupoStatusEstoque img {
     display: flex;
-    width: 30px;
+    max-width: 30px;
     height: 30px;
     margin-right: 10px;
 }
@@ -189,38 +196,9 @@ body {
     margin-left: 5px;
 }
 
-.tabelaItens {
-    margin-top: 10px;
-}
-
-
-
-/* css para a tabela */
-.tabelaItens {
-    border: 1px solid #cdcdcd;
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 10px;
-    font-size: 16px;
-    font-weight: unset;
-}
-
-.tabelaItens th {
-    background-color: #15c7ff;
-    border: 1px solid #cdcdcd;
-    border-collapse: collapse;
-    color: white;
-    text-align: left;
-    padding-left: 10px;
-}
-
-.tabelaItens tr,
-.tabelaItens td {
-    border: 1px solid #cdcdcd;
-    border-collapse: collapse;
-    padding-left: 10px;
-}
-#nivel{
-    margin-left: 2px;
-    border: 1px solid #CDCDCD;
+.dadosPrincipais,
+.itensRequisicao {
+    padding: 20px;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
