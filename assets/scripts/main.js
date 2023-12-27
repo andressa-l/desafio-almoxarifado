@@ -1,6 +1,4 @@
-
 function adicionarCorAoFocarInput() {
-    // const listinput = document.querySelectorAll("input[type=text]");
     const listinput = document.querySelectorAll("input");
 
 
@@ -327,7 +325,7 @@ inpNumero.addEventListener("input", function() {
 });
 
 
-adicionarCorAoFocarInput(); // Inicia a função ao carregar a página
+adicionarCorAoFocarInput();
 carregarCategorias();
 verificarEstoque();
 carregarMotivos();

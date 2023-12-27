@@ -3,7 +3,7 @@ select {
     border-color: #cdcdcd;
     border-style: solid;
     border-width: 1px;
-    border-radius: 2px;
+    border-radius: 1rem;
     height: 25px;
 }
 
