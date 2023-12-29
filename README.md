@@ -18,7 +18,7 @@ A proposta para o desenvolvimento deste projeto foi a construção de um sistema
 - Trabalhar com CSS3 para estilização dos elementos.
 - Desenvolver habilidades em JavaScript.
 
-<em>*Aqui consta as principais tecnologias usadas, podem ser abordadas outras no desenvolvimento do projeto, basta conferir o código completo. </em>
+> <em>Aqui consta as principais tecnologias usadas, podem ser abordadas outras no desenvolvimento do projeto, basta conferir o código completo. </em>
 
 ## Percurso
 <table>
