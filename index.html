@@ -16,7 +16,7 @@
 
     <div class="container">
         
-        <form class="conteudo">
+        <div class="conteudo">
             <header class="header">
                 <h1>Novo Pedido de Requisição</h1>
             </header>
@@ -33,7 +33,7 @@
                         </div>
                         <div class="grupo2 grupoInput">
                             <span>Departamento</span>
-                            <input type="text" id="departamento" data-obrigatorio="true" />
+                            <input disabled type="text" id="departamento" data-obrigatorio="true" />
                         </div>
                         <div class="grupo3 grupoInput">
                             <span>Data</span>
@@ -47,11 +47,11 @@
                         </div>
                         <div class="grupo5 grupoInput">
                             <span>Nome Funcionário</span>
-                            <input type="text" id="NomeFuncionario" />
+                            <input autocomplete="off" disabled type="text" id="NomeFuncionario" />
                         </div>
                         <div class="grupo6 grupoInput">
                             <span>Cargo</span>
-                            <input type="text" id="cargo" data-obrigatorio="true" />
+                            <input disabled type="text" id="cargo" data-obrigatorio="true" />
                         </div>
                     </div>
                     <div class="camposPrincipaisLinha3 linhasCampos">
@@ -65,7 +65,7 @@
                         <div class="grupo8 grupoInput">
                             <span>Motivo</span>
                             <div class="grupoMotivo">
-                                <select id="Motivo" data-obrigatorio="true"></select>
+                                <select disabled id="Motivo" data-obrigatorio="true"></select>
                                 <img class="btnAdd" src="assets/img/add.svg" alt="" />
                             </div>
                         </div>
@@ -100,18 +100,18 @@
                     <div class="linhaAdicionarItens">
                         <div class="grupoProduto">
                             <span>Cod. Produto</span>
-                            <input type="text" id="CodigoProduto" data-obrigatorio="true" data-only-number="true" onchange="verificarEstoque()" />
+                            <input type="text" id="CodigoProduto" data-obrigatorio="true" data-only-number="true" onchange="verificarProduto()" />
                         </div>
                         <div class="grupoProdutoDescricao">
                             <span>Descrição</span>
-                            <input type="text" id="DescricaoProduto" data-obrigatorio="true" />
+                            <input type="text" id="DescricaoProduto" disabled data-obrigatorio="true" />
                         </div>
                         <div class="grupoEstoque">
                             <span>Estoque</span>
-                            <input type="number" id="Estoque" data-obrigatorio="true" />
+                            <input type="number" id="Estoque" disabled data-obrigatorio="true" />
                         </div>
                         <div class="grupoQuantidade">
-                            <span>Quantidade</span>
+                            <span>Saída</span>
                             <input type="number" id="Quantidade" data-obrigatorio="true" data-only-number="true" />
                         </div>
 
@@ -121,9 +121,9 @@
                                 <img src="assets/img/branco.svg" alt="" id="nivel" class="image-with-tooltip">
                             </div>
                         </div>
-                        <div id="BtnInserirItens">
+                        <button class="btnInserirItens" id="BtnInserirItens" disabled style="border: none;">
                             <span>Adicionar</span>
-                        </div>
+                        </button>
                     </div>
                     <div class="tabelaItens">
                         <table class="tabelaItens" id="tabelaItens">
@@ -148,7 +148,7 @@
                     </div>
                 </div>
             </div>
-        </form>
+        </div>
     </div>
 
     <script src="assets/scripts/dados.js"></script>
